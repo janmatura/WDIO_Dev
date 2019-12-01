@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+      "lib": [
+        "dom",
+        "es7"
+      ],
+      "target": "es5",
+      "module": "commonjs",
+      "outDir": "build",
+      "noImplicitAny": false,
+      "noImplicitReturns": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "sourceMap": true,
+      "baseUrl": ".",
+      "paths": {
+        "*": [ "./*" ],
+        "pages/*": ["./pages/*"],
+        "types/*": ["./types/*"],
+        "models/*": ["./models/*"],
+        "test/*": ["./test/*"],
+        "steps/*": ["./steps/*"],
+        "data/*": ["./data/*"],
+        "helpers/*": ["./helpers/*"]
+      },
+      "types": ["@wdio/mocha-framework", "node", "chai", "@wdio/sync", "./.types/wdio"],
+      "typeRoots": ["./.types", "./node_modules/@types"]
+    },
+    "include": [
+      "./test/**/*.ts",
+      "./pages/**/*.ts",
+      "./types/**/*.ts",
+      "./helpers/**/*.ts",
+      "./steps/**/*.ts", "test/routing/testrail.ts", "testrail.ts"
+    ],
+    "exclude": [
+      "./node_modules",
+      "./test/drafts"
+    ],
+    "compileOnSave": false
+  }
+  

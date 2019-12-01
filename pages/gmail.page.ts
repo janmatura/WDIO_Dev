@@ -1,7 +1,9 @@
 import { Page } from "./page";
 
 export class GmailPageClass extends Page{
-    selectedBrowser:
+    selectedBrowser: WebdriverIO.Browser
+
+
 
 
 } 

@@ -1,9 +1,10 @@
 {
-  "name": "WDIO_Dev",
+  "name": "wdio_dev",
   "version": "1.0.0",
   "description": "WDIO_Dev",
   "main": "index.js",
   "scripts": {
+    "test.desktop.1": "./node_modules/.bin/wdio config/desktop.chrome.1.conf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
