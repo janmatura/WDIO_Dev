@@ -1,0 +1,6 @@
+errorShots/*
+node_modules
+build
+# Reports section
+allure-report
+allure-results
